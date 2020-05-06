@@ -29,7 +29,7 @@ class Home extends React.Component {
     try {
       event.preventDefault();
       this.setState({ loading: true });
-      const response = await axios.get('https://l1kwik11ne.execute-api.ap-northeast-1.amazonaws.com/production/golf-courses', {
+      const response = await axios.get('https://9yr15rllvj.execute-api.ap-northeast-1.amazonaws.com/production/golf-courses', {
         params: { date: format(this.state.date, 'yyyyMMdd'),
         budget: this.state.budget,
         departure: this.state.departure,
